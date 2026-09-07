@@ -7,11 +7,11 @@ public class App {
         switchFunction(4);
         switchFunction(5);
 
-        enhancedSwitchFunction(1)
-        enhancedSwitchFunction(2)
-        enhancedSwitchFunction(3)
-        enhancedSwitchFunction(4)
-        enhancedSwitchFunction(5)
+        enhancedSwitchFunction(1);
+        enhancedSwitchFunction(2);
+        enhancedSwitchFunction(3);
+        enhancedSwitchFunction(4);
+        enhancedSwitchFunction(5);
     }
 
     public static void switchFunction(int value) {
