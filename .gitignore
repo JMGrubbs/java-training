@@ -1,1 +1,6 @@
-.vscode
+bin/
+*.class
+.project
+.classpath
+.settings/
+.vscode/
