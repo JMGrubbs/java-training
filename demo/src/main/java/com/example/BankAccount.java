@@ -30,6 +30,12 @@ public class BankAccount {
         this.phone_number = phone_number;
     }
 
+    public BankAccount(
+
+    ){
+
+    }
+
     public int getAccount_number() {
         return this.account_number;
     }
