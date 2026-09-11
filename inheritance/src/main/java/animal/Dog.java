@@ -28,7 +28,4 @@ public class Dog extends Animal {
         super.move(speed);
         System.out.println("Dogs walk, run, and wag thier tail.");
     }
-
-
-
 }
