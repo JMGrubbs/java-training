@@ -1,5 +1,2 @@
 game/adventure/game/Game.class
-game/adventure/game/Player.class
-game/adventure/game/GameMap.class
 game/adventure/App.class
-game/adventure/game/MapLocation.class

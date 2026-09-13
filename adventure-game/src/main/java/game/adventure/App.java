@@ -17,7 +17,7 @@ public class App {
             while (running) {
                 clearScreen();
 
-                game.showMap();
+                game.displayScreen();
 
                 System.out.println();
                 System.out.println("Use arrow keys or WASD to move.");
