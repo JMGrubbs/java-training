@@ -1,4 +1,4 @@
-package game.adventure.game;
+package game.adventure;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

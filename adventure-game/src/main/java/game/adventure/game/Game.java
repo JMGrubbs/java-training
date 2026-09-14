@@ -9,7 +9,11 @@ public class Game {
     private  Player player;
 
     public Game(){
-        this.map = new GameMap(100, 100);
+        this(100, 100);
+    }
+
+    public Game(int x, int y){
+        this.map = new GameMap(x, y);
         map.populateMap();
         String randomLocation = map.getRandomLocation();
         this.player = new Player("John", randomLocation);
@@ -43,8 +47,8 @@ public class Game {
         int y = coords.get(1);
 
         y = y + 1;
-        if (y > map.getYSize()-1) {
-            y = map.getYSize()-1;
+        if (y > map.getySize()-1) {
+            y = map.getySize()-1;
         }
 
         coords.set(1, y);
@@ -60,8 +64,8 @@ public class Game {
         int y = coords.get(1);
 
         x = x + 1;
-        if (x > map.getXSize()-1) {
-            x = map.getXSize()-1;
+        if (x > map.getxSize()-1) {
+            x = map.getxSize()-1;
         }
 
         coords.set(0, x);
@@ -113,6 +117,9 @@ public class Game {
 
     public void addMoney(Player player){
         int newMoney = random.nextInt(5);
+        if (newMoney == 0) {
+            newMoney = 1;
+        }
         player.addMoney(newMoney);
     }
 
@@ -123,7 +130,6 @@ public class Game {
     public void visitTown(Player player){
         System.out.println("Visiting Town");
     };
-
 
     public MapLocation getPlayerLocation(){
 
@@ -136,4 +142,29 @@ public class Game {
         this.handlePlayerLocation(player);
         this.showMap();
     }
+
+    public Random getRandom() {
+        return random;
+    }
+
+    public void setRandom(Random random) {
+        this.random = random;
+    }
+
+    public GameMap getMap() {
+        return map;
+    }
+
+    public void setMap(GameMap map) {
+        this.map = map;
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
+
 }

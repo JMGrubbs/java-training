@@ -22,15 +22,6 @@ public class GameMap {
         this.mapLayout = new String[this.xSize][this.ySize];
     }
 
-    public int getXSize(){
-        return this.xSize;
-
-    }
-
-    public int getYSize(){
-        return this.ySize;
-    }
-
     public void populateMap() {
         String[] uniqueLocations = {"Town", "Loot", "Drag"};
 

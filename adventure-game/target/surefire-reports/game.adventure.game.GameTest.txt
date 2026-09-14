@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: game.adventure.game.AppTest
+Test set: game.adventure.game.GameTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in game.adventure.game.AppTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s -- in game.adventure.game.GameTest
